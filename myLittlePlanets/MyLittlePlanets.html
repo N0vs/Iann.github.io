@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MyLittlePlanets</title>
+		<!-- Tailwind CSS CDN -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+		<script>
+			// Extend Tailwind Configuration
+			tailwind.config = {
+				theme: {
+					extend: {
+						dropShadow: {
+							planets: '0 10px 5px rgba(0, 0, 0, 0.70)'
+						}
+					},
+					colors: {
+						blue: '#191654',
+						'light-cian': '#86FDE8',
+						'light-orange': '#F99985',
+						'light-red': '#F98585',
+						'light-yellow': '#F9BF85',
+						'light-blue': '#85B7F9',
+						white: '#FFE6E2',
+						black: '#000000'
+					},
+					fontSize: {
+						default: '1.125rem'
+					},
+					fontFamily: {
+						serif: ['Tahoma', 'Verdana', 'Arial']
+					}
+				}
+			};
+		</script>
+	</head>
+	<body class="font-serif bg-blue text-base">
+		<header class="text-center h-[500px]"></header>
+		<main class="flex h-full w-full items-center justify-center">
+			<!-- carousel -->
+			<div
+				id="default-carousel"
+				class="relative w-full sm:h-[37.5rem]"
+				data-carousel="slide">
+				<!-- Carousel Wrapper -->
+				<div
+					class="relative h-[45rem] overflow-hidden rounded-lg md:h-[50rem]">
+					<!-- Item 1 mercury -->
+					<div
+						class="hidden duration-700 ease-in-out"
+						data-carousel-item>
+						<div
+							class="flex flex-col items-center justify-center h-[54.5rem] w-full">
+							<!-- Card with Image and Gradient -->
+							<img
+								src="./img/terra.webp"
+								alt="Cartoon-Illustration-of-Earth"
+								class="w-[14.75rem] h-[14.75rem] ml-5 absolute top-0 drop-shadow-planets" />
+							<div
+								class="from-light-orange flex-col items-center to-white rounded-lg bg-gradient-to-b shadow-lg sm:relative flex h-[31.25rem] w-[20.625rem]">
+								<p class="text-black text-left font-bold p-8">
+									Lorem ipsum dolor sit amet consectetur.
+									Augue commodo at a gravida ipsum netus est
+									amet dolor. Tempus proin diam mauris sed a
+									molestie senectus enim donec. Viverra tempus
+									congue adipiscing scelerisque sed sit risus
+									pharetra. Netus nulla tellus diam viverra in
+									sed id sagittis. Quisque leo morbi mauris
+									accumsan pulvinar in sed quis. Nulla purus
+									amet tincidunt iaculis tortor nibh sed
+									tellus. Nullam mauris sed ipsum et aliquam
+									pellentesque leo non. Aliquam tellus
+									consequat amet sodales vel gravida.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Item 2 venus-->
+					<div
+						class="hidden duration-700 ease-in-out"
+						data-carousel-item>
+						<div
+							class="flex flex-col items-center justify-center h-[54.5rem] w-full">
+							<!-- Card with Image and Gradient -->
+							<img
+								src="./img/mercurio-removebg-preview.png"
+								alt="Cartoon-Illustration-of-Earth"
+								class="w-[14.75rem] h-[14.75rem] ml-5 absolute top-0 drop-shadow-planets" />
+							<div
+								class="from-light-red flex-col items-center to-white rounded-lg bg-gradient-to-b shadow-lg sm:relative flex h-[31.25rem] w-[20.625rem]">
+								<p class="text-black text-left font-bold p-8">
+									Lorem ipsum dolor sit amet consectetur.
+									Augue commodo at a gravida ipsum netus est
+									amet dolor. Tempus proin diam mauris sed a
+									molestie senectus enim donec. Viverra tempus
+									congue adipiscing scelerisque sed sit risus
+									pharetra. Netus nulla tellus diam viverra in
+									sed id sagittis. Quisque leo morbi mauris
+									accumsan pulvinar in sed quis. Nulla purus
+									amet tincidunt iaculis tortor nibh sed
+									tellus. Nullam mauris sed ipsum et aliquam
+									pellentesque leo non. Aliquam tellus
+									consequat amet sodales vel gravida.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 3 earth-->
+					<div
+						class="hidden duration-700 ease-in-out"
+						data-carousel-item>
+						<div
+							class="flex flex-col items-center justify-center h-[54.5rem] w-full">
+							<!-- Card with Image and Gradient -->
+							<img
+								src="./img/terra.webp"
+								alt="Cartoon-Illustration-of-Earth"
+								class="w-[14.75rem] h-[14.75rem] ml-5 absolute top-0 drop-shadow-planets" />
+							<div
+								class="from-light-cian flex-col items-center to-white rounded-lg bg-gradient-to-b shadow-lg sm:relative flex h-[31.25rem] w-[20.625rem]">
+								<p class="text-black text-left font-bold p-8">
+									Lorem ipsum dolor sit amet consectetur.
+									Augue commodo at a gravida ipsum netus est
+									amet dolor. Tempus proin diam mauris sed a
+									molestie senectus enim donec. Viverra tempus
+									congue adipiscing scelerisque sed sit risus
+									pharetra. Netus nulla tellus diam viverra in
+									sed id sagittis. Quisque leo morbi mauris
+									accumsan pulvinar in sed quis. Nulla purus
+									amet tincidunt iaculis tortor nibh sed
+									tellus. Nullam mauris sed ipsum et aliquam
+									pellentesque leo non. Aliquam tellus
+									consequat amet sodales vel gravida.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 4 mars-->
+					<div
+						class="hidden duration-700 ease-in-out"
+						data-carousel-item>
+						<div
+							class="flex flex-col items-center justify-center h-[54.5rem] w-full">
+							<!-- Card with Image and Gradient -->
+							<img
+								src="./img/mercurio-removebg-preview.png"
+								alt="Cartoon-Illustration-of-Earth"
+								class="w-[14.75rem] h-[14.75rem] ml-5 absolute top-0 drop-shadow-planets" />
+							<div
+								class="from-light-red flex-col items-center to-white rounded-lg bg-gradient-to-b shadow-lg sm:relative flex h-[31.25rem] w-[20.625rem]">
+								<p class="text-black text-left font-bold p-8">
+									Lorem ipsum dolor sit amet consectetur.
+									Augue commodo at a gravida ipsum netus est
+									amet dolor. Tempus proin diam mauris sed a
+									molestie senectus enim donec. Viverra tempus
+									congue adipiscing scelerisque sed sit risus
+									pharetra. Netus nulla tellus diam viverra in
+									sed id sagittis. Quisque leo morbi mauris
+									accumsan pulvinar in sed quis. Nulla purus
+									amet tincidunt iaculis tortor nibh sed
+									tellus. Nullam mauris sed ipsum et aliquam
+									pellentesque leo non. Aliquam tellus
+									consequat amet sodales vel gravida.
+								</p>
+							</div>
+						</div>
+					</div>
+                    <!-- Item 5 saturn -->
+					<div
+						class="hidden duration-700 ease-in-out"
+						data-carousel-item>
+						<div
+							class="flex flex-col items-center justify-center h-[54.5rem] w-full">
+							<!-- Card with Image and Gradient -->
+							<img
+								src="./img/mercurio-removebg-preview.png"
+								alt="Cartoon-Illustration-of-Earth"
+								class="w-[14.75rem] h-[14.75rem] ml-5 absolute top-0  drop-shadow-planets" />
+							<div
+								class="from-light-orange flex-col items-center to-white rounded-lg bg-gradient-to-b shadow-lg sm:relative flex h-[31.25rem] w-[20.625rem]">
+								<p class="text-black text-left font-bold p-8">
+									Lorem ipsum dolor sit amet consectetur.
+									Augue commodo at a gravida ipsum netus est
+									amet dolor. Tempus proin diam mauris sed a
+									molestie senectus enim donec. Viverra tempus
+									congue adipiscing scelerisque sed sit risus
+									pharetra. Netus nulla tellus diam viverra in
+									sed id sagittis. Quisque leo morbi mauris
+									accumsan pulvinar in sed quis. Nulla purus
+									amet tincidunt iaculis tortor nibh sed
+									tellus. Nullam mauris sed ipsum et aliquam
+									pellentesque leo non. Aliquam tellus
+									consequat amet sodales vel gravida.
+								</p>
+							</div>
+						</div>
+					</div>
+                    <!-- Item 6 -->
+					<div
+						class="hidden duration-700 ease-in-out"
+						data-carousel-item>
+						<div
+							class="flex flex-col items-center justify-center h-[54.5rem] w-full">
+							<!-- Card with Image and Gradient -->
+							<img
+								src="./img/mercurio-removebg-preview.png"
+								alt="Cartoon-Illustration-of-Earth"
+								class="w-[14.75rem] h-[14.75rem] ml-5 absolute top-0  drop-shadow-planets" />
+							<div
+								class="from-light-orange flex-col items-center to-white rounded-lg bg-gradient-to-b shadow-lg sm:relative flex h-[31.25rem] w-[20.625rem]">
+								<p class="text-black text-left font-bold p-8">
+									Lorem ipsum dolor sit amet consectetur.
+									Augue commodo at a gravida ipsum netus est
+									amet dolor. Tempus proin diam mauris sed a
+									molestie senectus enim donec. Viverra tempus
+									congue adipiscing scelerisque sed sit risus
+									pharetra. Netus nulla tellus diam viverra in
+									sed id sagittis. Quisque leo morbi mauris
+									accumsan pulvinar in sed quis. Nulla purus
+									amet tincidunt iaculis tortor nibh sed
+									tellus. Nullam mauris sed ipsum et aliquam
+									pellentesque leo non. Aliquam tellus
+									consequat amet sodales vel gravida.
+								</p>
+							</div>
+						</div>
+					</div>
+                    <!-- Item 7 -->
+					<div
+						class="hidden duration-700 ease-in-out"
+						data-carousel-item>
+						<div
+							class="flex flex-col items-center justify-center h-[54.5rem] w-full">
+							<!-- Card with Image and Gradient -->
+							<img
+								src="./img/mercurio-removebg-preview.png"
+								alt="Cartoon-Illustration-of-Earth"
+								class="w-[14.75rem] h-[14.75rem] ml-5 absolute top-0  drop-shadow-planets" />
+							<div
+								class="from-light-blue flex-col items-center to-white rounded-lg bg-gradient-to-b shadow-lg sm:relative flex h-[31.25rem] w-[20.625rem]">
+								<p class="text-black text-left font-bold p-8">
+									Lorem ipsum dolor sit amet consectetur.
+									Augue commodo at a gravida ipsum netus est
+									amet dolor. Tempus proin diam mauris sed a
+									molestie senectus enim donec. Viverra tempus
+									congue adipiscing scelerisque sed sit risus
+									pharetra. Netus nulla tellus diam viverra in
+									sed id sagittis. Quisque leo morbi mauris
+									accumsan pulvinar in sed quis. Nulla purus
+									amet tincidunt iaculis tortor nibh sed
+									tellus. Nullam mauris sed ipsum et aliquam
+									pellentesque leo non. Aliquam tellus
+									consequat amet sodales vel gravida.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slider Indicators -->
+				<div
+					class="absolute z-30 flex -translate-x-1/2 bottom-0 left-1/2 space-x-3">
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full bg-gray-300"
+						aria-current="true"
+						aria-label="Slide 1"
+						data-carousel-slide-to="0"></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full bg-gray-300"
+						aria-current="false"
+						aria-label="Slide 2"
+						data-carousel-slide-to="1"></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full bg-gray-300"
+						aria-current="false"
+						aria-label="Slide 3"
+						data-carousel-slide-to="2"></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full bg-gray-300"
+						aria-current="false"
+						aria-label="Slide 4"
+						data-carousel-slide-to="3"></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full bg-gray-300"
+						aria-current="false"
+						aria-label="Slide 5"
+						data-carousel-slide-to="4"></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full bg-gray-300"
+						aria-current="false"
+						aria-label="Slide 6"
+						data-carousel-slide-to="5"></button>
+					<button
+						type="button"
+						class="w-3 h-3 rounded-full bg-gray-300"
+						aria-current="false"
+						aria-label="Slide 7"
+						data-carousel-slide-to="6"></button>
+				</div>
+
+				<!-- Slider Controls -->
+				<button
+					type="button"
+					class="absolute top-0 left-0 z-30 flex items-center justify-center h-[15rem] px-4 cursor-pointer group focus:outline-none"
+					data-carousel-prev>
+					<span
+						class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+						<svg
+							class="w-4 h-4 text-white"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 6 10">
+							<path
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 1 1 5l4 4" />
+						</svg>
+						<span class="sr-only">Previous</span>
+					</span>
+				</button>
+				<button
+					type="button"
+					class="absolute top-0 right-0 z-30 flex items-center justify-center h-[15rem] px-4 cursor-pointer group focus:outline-none"
+					data-carousel-next>
+					<span
+						class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+						<svg
+							class="w-4 h-4 text-white"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 6 10">
+							<path
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="m1 9 4-4-4-4" />
+						</svg>
+						<span class="sr-only">Next</span>
+					</span>
+				</button>
+			</div>
+
+			<!-- end of carousel -->
+			<!-- 
+			<div class="items-center sm:relative flex-col h-[37.5rem]">
+				<img
+					src="./img/terra.webp"
+					alt="Cartoon-Ilustration-of-Earth"
+					class="w-[18.75rem] h-[18.75rem] sm: relative ml-5 absolute top-[4rem] drop-shadow-planets" />
+				<div
+					class="from-light-cian flex-col items-center to-white rounded-lg bg-gradient-to-b shadow-lg sm:relative flex h-[31.25rem] w-[20.625rem]">
+					<p class="text-black text-left font-bold p-8">
+						Lorem ipsum dolor sit amet consectetur. Augue commodo at
+						a gravida ipsum netus est amet dolor. Tempus proin diam
+						mauris sed a molestie senectus enim donec. Viverra
+						tempus congue adipiscing scelerisque sed sit risus
+						pharetra. Netus nulla tellus diam viverra in sed id
+						sagittis. Quisque leo morbi mauris accumsan pulvinar in
+						sed quis. Nulla purus amet tincidunt iaculis tortor nibh
+						sed tellus. Nullam mauris sed ipsum et aliquam
+						pellentesque leo non. Aliquam tellus consequat amet
+						sodales vel gravida.
+					</p>
+				</div>
+			</div> -->
+		</main>
+		<footer class="text-center mt-6"></footer>
+	</body>
+</html>
